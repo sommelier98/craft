@@ -1,0 +1,101 @@
+body {
+  background-color: #fff5dc;
+  background-image: url("img/floral-1814372_640.jpg");
+  text-align: center;
+}
+
+header {
+  backdrop-filter: blur(20px);
+  height: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:visited {
+  text-decoration: none;
+}
+
+header a:after {
+  content: ' | ';
+}
+
+header a:last-child:after {
+  content: none;
+}
+
+#brand-info {
+  padding-top: 20px;
+}
+
+img.logo {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.good {
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 10px 10px;
+  display: inline-block;
+  width: 32%;
+  width: calc(32% - 6px);
+}
+
+.good img {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.good-spacer {
+  display: inline-block;
+  width: 1%;
+}
+
+footer {
+  margin-top: 8%;
+}
+
+
+footer section {
+  background-color: #fff5dc;
+  border-radius: 20px !important;
+  margin-bottom: 1%;
+  min-height: 200px;
+  opacity: 0.75;
+}
+
+footer section a {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+/* for mobile phones */
+@media (min-width: 320px) and (max-width: 767px) {
+  .good {
+    width: 100% !important;
+  }
+
+  .good-spacer {
+    width: 0;
+  }
+}
+
+/* for dark themes */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: grey;
+  }
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
