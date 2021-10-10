@@ -31,7 +31,7 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v0.6.1
         with:
           # Path of the files to test
-          root: # optional
+          root: /
           # Path of config file
           config: # optional
           # Extra arguments to test with
